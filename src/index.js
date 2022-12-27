@@ -34,7 +34,7 @@ function getBalance(statement){
 }
 
 app.post("/account", (request, response) => {
-    const { cpf, name } = request.body;
+    const { cpf, name, } = request.body;
 
     const customerAlreadyExists = customers.some(
         (customer) => customer.cpf === cpf
